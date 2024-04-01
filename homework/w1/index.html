@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hide{
+            display:none;
+        }
+        body{
+            background-color: lavender;
+        }
+        h1{
+            color: purple;
+        }
+        h2{
+            color: violet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Allison Wisher</h1>
+    <hr>
+    <div id="nav">
+        <a href="#" class="page">Bio</a>
+        <a href="#" class="page">Eduacation</a>
+        <a href="#" class="page">Hobbies</a>
+    </div>
+    <hr>
+    <div id="main">
+        <div id="bio" class="section">
+            <h2>My Bio</h2>
+            <img src="" alt="picture">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sunt beatae similique cumque vel, quidem error temporibus modi aperiam minus itaque vero adipisci cum. Amet dicta ea eveniet beatae officiis?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem molestiae quod culpa enim ullam itaque ipsum rem quam ut suscipit id nulla, excepturi animi provident quasi possimus veniam? Obcaecati, temporibus.
+            </p>
+            <div id="ed" class="section">
+                <h2>Schooling</h2>
+                <ul>
+                    <li>Randle Holden Elemetery</li>
+                    <li>Warwick Veterans Memorial Middle School</li>
+                    <li><a href="https://phs.warwickschools.org/" target="_blank">Pilgrim High School</a></li>
+                </ul>
+            </div>
+            <div id="hobbis" class="section">
+                <h2>Hobbies</h2>
+                <ol>
+                    <li>Drinking (coffee)</li>
+                    <li>Reading</li>
+                    <li>Causing Problems on Purpose</li>
+                </ol>
+                <img src="" alt="Drink Responsible">
+                <hr>
+            </div>
+            <div id="footer">
+                <p>©2024 Allison Wisher | W1 Assignment</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <script> 
+        var a = Array.from(document.querySelectorAll(`a.page`));
+        var div = document.querySelectorAll(`.section`);
+        console.log(a);
+        console.log(div)
+
+        for(var i=0; i<a.length; i++)
+        {
+            a[i].addEventListener(`click`, press);
+        }
+        
+        function press(merp)
+        {
+            merp.preventDefault()
+
+            for(var i=0; i<a.length; i++)
+            {
+                div[i].classList.add(`hide`);
+            }
+            div[a.indexOf(merp.target)].classList.remove(`hide`)
+            console.log(div)
+        }
+    </script>
+</body>
+</html>
