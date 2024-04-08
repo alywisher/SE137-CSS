@@ -1,0 +1,22 @@
+.hide{
+    display:none;
+}
+body{
+    background-color: whitesmoke;
+}
+h1{
+    color: black;
+    text-align: center;
+    border-bottom: 2px solid black ;
+   
+    
+}
+h2{
+    color: black;
+}
+#nav{
+    text-align: center;
+}
+#footer{
+    color: black;
+}
