@@ -1,3 +1,6 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 .hide{
     display:none;
 }
@@ -5,18 +8,33 @@ body{
     background-color: whitesmoke;
 }
 h1{
-    color: black;
+    font-family: "Lobster Two", sans-serif;;
     text-align: center;
-    border-bottom: 2px solid black ;
-   
+    border-bottom: 1px solid black;
+    color: salmon;
     
 }
 h2{
-    color: black;
+    font-family: "Lobster Two", sans-serif;
+    color: salmon;
 }
 #nav{
     text-align: center;
+    border-bottom: 1px solid black;
+    color: rgb(253, 108, 92);
 }
 #footer{
     color: black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
+#main{
+    font-family:"Quicksand", sans-serif;
+}
+.page{
+    color: whitesmoke;
+    font-size: x-large;
+    background-color: salmon;
+    border-radius: 10%;
+}
+
