@@ -19,3 +19,4 @@ function butts(e)
     e.target.style.backgroundColor=`#c2c2c2`;
     document.querySelector(`#breadcrumbs`).innerHTML=`<a href="#">${e.target.innerText}</a>`
 }
+// + `>` this alows the arrows between breadcrumbs
