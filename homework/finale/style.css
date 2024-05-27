@@ -1,0 +1,51 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&family=Neonderthaw&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&family=Neonderthaw&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.neonderthaw-regular {
+    font-family: "Neonderthaw", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  /* Styles for mobile devices */
+@media (max-width: 767px) {
+    body {
+      font-size: 14px;
+    }
+    nav {
+      flex-direction: column;
+    }
+
+    #main{
+        flex-wrap: wrap;
+      }
+
+    #projects{
+        flex-direction: column;
+    }
+  }
+  
+h1{
+    background-color: #365073;
+    font-size: 100px;
+    text-align: center;
+    color: #C9DBF2;
+    padding: 20px;
+    font-family: "Neonderthaw", cursive;
+}
+h2{
+    font-family: "Roboto Mono", monospace;
+    color: #365073;
+}
+p{
+    font-family: "Roboto Mono", monospace;
+    color: #365073;
+}
+nav{
+    font-family: "Roboto Mono", monospace;
+    color: #365073;
+    
+}
+body{
+    padding: 5px;
+}
